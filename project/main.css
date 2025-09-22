@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Tinos", serif;
+  background-color: #fff;
+}
+
+.navbar {
+  height: 90px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: 900;
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar .a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.navbar .a:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  color: #fff;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.image1 {
+  height: 90vh;
+  width: 100%;
+  background-image: url('https://assets.zeezest.com/blogs/PROD_Matheran%20banner_1686163932972.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 13vh;
+}
+
+#matheran {
+  font-family: "Tiro Devanagari Marathi", serif;
+  font-size: 10vw;
+  font-weight: 600;
+  color: white;
+  text-shadow: 3px 2px 3px black;
+  margin-left: 5vw;
+  margin-top: 10vh;
+}
+
+.inside {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.img {
+  height: 180px;
+  width: 200px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.about {
+  background-color: blanchedalmond;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.about h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.about h2 {
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 15px;
+  white-space: pre-line;
+  max-width: 1000px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.footer {
+  width: 100%;
+  background-color: rgb(10, 54, 121);
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.footer a {
+  color: #ddd;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  #matheran {
+    font-size: 14vw;
+    margin-left: 20px;
+    margin-top: 60px;
+  }
+
+  .img {
+    width: 45%;
+    margin-bottom: 10px;
+  }
+
+  .about h1 {
+    font-size: 30px;
+  }
+
+  .about h2 {
+    font-size: 18px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+}

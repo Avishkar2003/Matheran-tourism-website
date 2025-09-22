@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Matheran Tourism</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi:ital@0;1&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Tinos", serif;
+      background-color: #fff;
+    }
+
+    .navbar {
+      height: 13vh;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: rgb(10, 54, 121);
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      z-index: 1000;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      height: 50px;
+      width: auto;
+      margin-right: 10px;
+      border-radius: 8px;
+    }
+
+    .navbar .a {
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 10px 15px;
+      font-size: 16px;
+    }
+
+    .navbar .a:hover {
+      text-decoration: underline;
+    }
+
+    .spacer {
+      height: 13vh;
+    }
+
+    .image1 {
+      height: 90vh;
+      width: 100%;
+      background-image: url('https://assets.zeezest.com/blogs/PROD_Matheran%20banner_1686163932972.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top: 13vh;
+    }
+
+    #matheran {
+      font-family: "Tiro Devanagari Marathi", serif;
+      font-size: 10vw;
+      font-weight: 600;
+      color: white;
+      text-shadow: 3px 2px 3px black;
+      margin-left: 5vw;
+      margin-top: 10vh;
+    }
+
+    .inside {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .img {
+      height: 180px;
+      width: 200px;
+      border-radius: 20px;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.3s ease;
+    }
+
+    .img:hover {
+      transform: scale(1.05);
+    }
+
+    .img1 {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEvpkRTfUmIWaRwddbMGWDmkivYTbu073tkA&s');
+    }
+
+    .img2 {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY4Joqw2xWY_lAX0ETc-zBWtI8jn08cDh6qw&s');
+    }
+
+    .img3 {
+      background-image: url('https://matherantourism.com/wp-content/uploads/2023/10/horse.jpg');
+    }
+
+    .img4 {
+      background-image: url('https://matherantourism.com/wp-content/uploads/2023/10/glimpse.jpg');
+    }
+
+    .img5 {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbgMe1ifsGegOzhWhx4TOD6oo8HjSQGuYmSw&usqp=CAU');
+    }
+
+    .img6 {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL5JFmcI3RXlIbTor8ZVnNNnnz9LPLNn3lIg&usqp=CAU');
+    }
+
+    .img7 {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSugZKmMYIjxHyKk--J82j89V5rOfq0rSRk262G_U398MnH7pIcvY3EwwYLi5L_6RH2Heg&usqp=CAU');
+    }
+
+    .about {
+      background-color: blanchedalmond;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .about h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .about h2 {
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      font-size: 15px;
+      white-space: pre-line;
+      max-width: 1000px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    .footer {
+      width: 100%;
+      background-color: rgb(10, 54, 121);
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    .footer a {
+      color: #ddd;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      #matheran {
+        font-size: 14vw;
+        margin-left: 20px;
+        margin-top: 60px;
+      }
+
+      .img {
+        width: 45%;
+        margin-bottom: 10px;
+      }
+
+      .about h1 {
+        font-size: 30px;
+      }
+
+      .about h2 {
+        font-size: 18px;
+      }
+
+      .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 8px;
+      }
+
+      .logo {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <div class="navbar">
+    <img src="logo.jpg" alt="dream place" class="logo">
+    <a class="a" href="./main.html">home</a>
+    <a class="a" href="./destination.html">Destination</a>
+    <a class="a" href="./packages.html">package</a>
+    <a class="a" href="./gallery.html">Gallery</a>
+    <a class="a" href="./contact.html">contact</a>
+    <a class="a" href="./login.html">login</a>
+  </div>
+
+  <!-- SPACER TO OFFSET FIXED NAVBAR -->
+  <div class="spacer"></div>
+
+  <!-- HERO IMAGE AND TITLE -->
+  <div class="image1">
+    <p id="matheran">माथेरान</p>
+    <div class="inside">
+      <div class="img img1"></div>
+      <div class="img img2"></div>
+      <div class="img img3"></div>
+      <div class="img img4"></div>
+      <div class="img img5"></div>
+      <div class="img img6"></div>
+      <div class="img img7"></div>
+    </div>
+  </div>
+
+  <!-- ABOUT SECTION -->
+  <div class="about">
+    <h1>About Us</h1>
+    <h2>Welcome to Matheran Tourism: Discover Nature's Beauty in the Heart of Maharashtra</h2>
+    <p>
+We are a passionate team of travel lovers dedicated to showcasing the natural beauty, rich history, and peaceful charm of Matheran.
+Our goal is to help you explore Matheran like never before—from its misty valleys and heritage sites to thrilling treks and tranquil viewpoints.
+Whether you're planning a weekend getaway, a romantic retreat, or a family vacation, our website offers everything you need—from travel tips and sightseeing guides to hotel bookings and local experiences.
+We believe in eco-friendly, memorable, and affordable tourism that supports the local community and preserves the unique essence of this car-free hill station.
+Let us help you plan your perfect trip to Matheran—where the journey is as beautiful as the destination.
+    </p>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Matheran Tourism. All rights reserved.</p>
+      <p>
+        Developed by Matheran Tourism Team |
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Terms of Use</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

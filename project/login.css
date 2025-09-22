@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-image: url(image1.jpg.jpeg);
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* So navbar stays on top, login box below */
+  align-items: center;
+  animation: fadeIn 1.2s ease-in;
+  padding: 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+  height: 90px;
+  width: 100vw;
+  border: 1px solid;
+  background: lightgray;
+  /* background-image: url(image1.jpg.jpeg); */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: 900;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  backdrop-filter: blur(8px); /* blur effect */
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent background */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar .a {
+  color: rgb(247, 245, 245);
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.navbar .a:hover {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  color: #000;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+/* Add space below fixed navbar */
+.spacer {
+  height: 90px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+  animation: slideIn 0.8s ease-out;
+  margin-top: 20px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.login-container h2 {
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 10px;
+}
+
+.login-container button:hover {
+  background-color: #1a5edb;
+}
+
+.links {
+  text-align: right;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.links a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #2575fc;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.signup-text {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.signup-text a {
+  color: #2575fc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px 15px;
+  margin-top: 50px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 30px 20px;
+  }
+
+  .login-container h2 {
+    font-size: 22px;
+  }
+
+  .login-container input,
+  .login-container button {
+    font-size: 15px;
+  }
+
+  .links a,
+  .signup-text {
+    font-size: 13px;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .navbar .a {
+    font-size: 14px;
+    margin: 5px;
+  }
+}
